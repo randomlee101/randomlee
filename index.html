@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Random's Blog
+    </title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="index.js">
+
+    </script>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="company-logo">
+            Company Logo
+        </div>
+        <div class="list-items">
+            <ul class="nav-links">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="sign_in">Sign In</a></li>
+                <li><a href="#" id="sign_out">Sign Out</a></li>
+                <li><a href="#" id="register">Register</a></li>
+                <li><a href="#" id="new_post">New Post</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+        </div>
+    </div>
+
+    <div class="sign_in">
+        <form>
+            <input type="text" placeholder="username" id="username_sign_in" />
+            <input type="password" placeholder="password" id="password_sign_in" />
+            <input type="submit" value="Log In" />
+        </form>
+    </div>
+
+    <div class="sign_up">
+        <form>
+            <input type="text" placeholder="username" id="username_sign_up" />
+            <input type="text" placeholder="first_name" id="first_name" />
+            <input type="text" placeholder="last_name" id="last_name" />
+            <input type="text" placeholder="email" id="email" />
+            <input type="text" placeholder="confirm_email" id="confirm_email" />
+            <input type="password" placeholder="password" id="password_sign_up" />
+            <input type="password" placeholder="confirm_password" id="confirm_password_sign_up" />
+            <input type="submit" />
+        </form>
+    </div>
+
+    <div class="new_post">
+        <form>
+            <input type="text" placeholder="title" id="title" />
+            <input type="text" placeholder="summary" id="summary" />
+            <input type="text" placeholder="body" id="body" />
+            <div>
+            <input type="submit" value="Post" />
+            <input type="reset" value="Clear" />
+            </div>
+        </form>
+    </div>
+
+    <div class="post">
+        <div class="title">
+            Post Title
+        </div>
+        <div>
+            Post Body
+        </div>
+    </div>
+
+</body>
+
+</html>
