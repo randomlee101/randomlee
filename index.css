@@ -27,6 +27,11 @@
     cursor: pointer;
 }
 
+.hamburger
+{
+    display: none;
+}
+
 /* .hamburger :nth-child(2)
 {
     display: none;
