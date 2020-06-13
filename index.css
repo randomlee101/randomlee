@@ -1,11 +1,10 @@
-*
-{
+* {
     margin: 0;
+    font-family: 'Jost', sans-serif;
     padding: 0;
 }
 
-.nav-bar
-{
+.nav-bar {
     display: flex;
     padding: 10px 15px;
     justify-content: space-between;
@@ -14,13 +13,11 @@
     color: white;
 }
 
-.company-logo
-{
+.company-logo {
     font-size: 28px;
 }
 
-.burger
-{
+.burger {
     display: block;
     background-color: white;
     margin: 2px;
@@ -30,7 +27,7 @@
     cursor: pointer;
 }
 
-.hamburger :nth-child(2)
+/* .hamburger :nth-child(2)
 {
     display: none;
     transform: rotate(35deg)
@@ -42,57 +39,55 @@
 .hamburger :nth-child(3)
 {
     transform: rotate(-45deg) translateY(-50%) translateX(10%);
+} */
+
+.list-items {
+    display: flex;
 }
 
-.list-items li
-{
+.list-items li {
     display: inline;
     margin: 0 5px;
 }
 
-.list-items a
-{
+.list-items a {
     text-decoration: none;
     color: white;
     padding: 5px;
     height: 100%;
 }
 
-.list-items a:hover
-{
+.list-items a:hover {
     color: #333;
     background-color: white;
 }
 
-.sign_in, .sign_up, .new_post, .post, .posts
-{
+.sign_in, .sign_up, .new_post, .post, .posts {
+    position: absolute;
     width: 90%;
     margin: 15px auto;
-    border: 1px solid black;
     padding: 15px;
     box-sizing: border-box;
-    box-shadow: 0px 5px 10px black;
-    transition: 600ms ease;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0px 0px 3px black;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
 }
 
-.posts div
-{
+.posts div {
     padding-bottom: 12px;
 }
 
-.title
-{
+.title {
     font-size: 24px;
 }
 
-.summary
-{
+.summary {
     font-size: 15px;
 }
 
-
-.link a
-{
+.link a {
     font-size: 15px;
     background-color: #333;
     width: 72px;
@@ -101,43 +96,66 @@
     text-decoration: none;
 }
 
-.link a:hover
-{
+.link a:hover {
     color: white;
     background-color: saddlebrown;
 }
 
-input[type=text],
-input[type=password]
-{
+input[type=text], input[type=password] {
     display: block;
     margin: 5px auto;
     padding: 5px 5px;
     width: 100%;
+    color: black;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
 }
 
-input[type=submit],
-input[type=reset]
-{
+::placeholder {
+    color: black;
+    letter-spacing: 5;
+}
+
+input[type=submit], input[type=reset] {
     display: inline-flex;
     padding: 5px 5px;
     outline: none;
     border: none;
+    align-items: center;
 }
 
-.new_post form, .sign_in form, .sign_up form
-{
+.new_post form, .sign_in form, .sign_up form {
     display: block;
     margin: 5px auto;
     width: 80%;
     justify-content: center;
 }
 
+@media (max-width: 768px) {
 
-@media (max-width: 768px)
-{
-    .list-items{
+    
+    .list-items {
         display: none;
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        top: 8.5vh;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
     }
-
+    .list-items li a {
+        display: block;
+        background-color: #333;
+        padding: 10px;
+        margin: 0;
+    }
+    .list-items li {
+        margin: 0;
+    }
+    .sign_in, .sign_up, .new_post, .post, .posts {
+        width: 70%;
+    }
 }
