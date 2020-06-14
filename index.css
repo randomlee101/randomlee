@@ -137,8 +137,12 @@ input[type=submit], input[type=reset] {
     justify-content: center;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 640px) {
 
+.harmburger
+{
+display: block 
+}
     
     .list-items {
         display: none;
