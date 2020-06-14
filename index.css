@@ -137,7 +137,7 @@ input[type=submit], input[type=reset] {
     justify-content: center;
 }
 
-@media screen (max-width: 768px) {
+@media all and (min-width: 768px) {
 
     
     .list-items {
