@@ -2,7 +2,6 @@
     margin: 0;
     font-family: 'Jost', sans-serif;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .nav-bar {
@@ -28,8 +27,7 @@
     cursor: pointer;
 }
 
-.hamburger
-{
+.hamburger {
     display: none;
 }
 
@@ -138,10 +136,9 @@ input[type=submit], input[type=reset] {
     justify-content: center;
 }
 
-@media (max-width: 768px) {
-
-    .hamburger{
-        display: block;
+@media screen and (max-width: 768px) {
+    .harmburger {
+        display: flex
     }
     .list-items {
         display: none;
